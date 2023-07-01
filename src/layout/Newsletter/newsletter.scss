@@ -1,0 +1,102 @@
+@import '../../styles.scss';
+
+.newsletter {
+  background-color: #fff6f3;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    // padding: 1rem;
+
+    img {
+      width: 20rem;
+    }
+
+    .details {
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 1rem;
+      }
+
+      .email {
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+      }
+
+      .email-r {
+        font-size: 1.4rem;
+      }
+
+      .phone {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+      }
+
+      .phone-r {
+        font-size: 1.4rem;
+      }
+
+      .box {
+        width: 30rem;
+        margin-bottom: 1rem;
+
+        @include mobile {
+          width: 20rem;
+        }
+
+        input {
+          width: 60%;
+          padding: 0.6rem;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          outline: none;
+
+          @include mobile {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+
+        button {
+          padding: 0.6rem;
+          font-size: 1.2rem;
+          margin-left: 1rem;
+          background-color: #ff5874;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+
+          @include mobile {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    span {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      margin-top: 1rem;
+
+      img {
+        width: 10rem;
+        margin-right: 1rem;
+        cursor: pointer;
+
+        @include mobile {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}

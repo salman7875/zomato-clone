@@ -1,0 +1,167 @@
+@import '../../styles.scss';
+
+.hero {
+  width: 100%;
+  height: 58vh;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 0 10rem;
+    top: 1rem;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        color: #fff;
+        font-size: 1.2rem;
+
+        @include mobile {
+          font-size: 0.7rem;
+        }
+
+        .icon {
+          font-size: 1rem;
+        }
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+
+        @include mobile {
+          gap: 0.6rem;
+        }
+
+        li {
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 300;
+
+            @include mobile {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .zomato {
+        width: 20rem;
+        color: #fff;
+        margin-bottom: 1rem;
+
+        @include mobile {
+          width: 10rem;
+        }
+      }
+
+      p {
+        font-size: 2.4rem;
+        color: #fff;
+        margin-bottom: 1.6rem;
+
+        @include mobile {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+
+      .input-con {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0rem 1rem;
+
+        @include mobile {
+          width: 100%;
+        }
+
+        .icon {
+          color: #777;
+        }
+
+        input {
+          color: #777;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 1.2rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.sections {
+  width: 100%;
+  height: 58vh;
+
+  .wrapper {
+    padding: 2rem 14rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    @include mobile {
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .hor-card {
+      width: 20rem;
+      height: 15rem;
+      border: 1px solid #888;
+      border-radius: 15px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: 0.5rem 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 1rem;
+        color: #555;
+      }
+    }
+  }
+}
